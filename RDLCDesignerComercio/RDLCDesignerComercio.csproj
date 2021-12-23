@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ReportDesigner.Entity\ReportDesigner.Entity.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Data\dsAlmacen.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>dsAlmacen.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="Data\dsBodega.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>dsBodega.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="Data\dsCredito.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>dsCredito.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="Data\dsFormatos.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>dsFormatos.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="Data\dsGlobal.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>dsGlobal.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Data\dsAlmacen.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAlmacen.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Data\dsBodega.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBodega.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Data\dsCredito.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCredito.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Data\dsFormatos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsFormatos.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Data\dsGlobal.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsGlobal.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
